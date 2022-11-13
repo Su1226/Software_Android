@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".selectAnswer">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text=" 앞의 그림에서 없었던 것은?"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/ans1"
+            android:layout_width="204dp"
+            android:layout_height="232dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ans1" />
+        <ImageButton
+            android:id="@+id/ans2"
+            android:layout_width="204dp"
+            android:layout_height="232dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:src="@drawable/ans2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/ans3"
+            android:layout_width="204dp"
+            android:layout_height="232dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:src="@drawable/ans3" />
+        <ImageButton
+            android:id="@+id/ans4"
+            android:layout_width="204dp"
+            android:layout_height="232dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:src="@drawable/ans4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pageNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="2/2"
+        android:textColor="#808080"
+        android:textSize="30dp" />
+
+</LinearLayout>

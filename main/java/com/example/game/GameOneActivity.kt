@@ -7,7 +7,7 @@ import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class GameOneActivity : AppCompatActivity() {
 
     lateinit var guild : TextView
     lateinit var sentence : TextView
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         checkResult = findViewById<Button>(R.id.checkResult)
 
         Quiz()
-        bnum()
+        rnum()
 
         answer1.setOnClickListener{
             if(bchoice==0) bbresult=1
@@ -90,10 +90,11 @@ class MainActivity : AppCompatActivity() {
     fun subQuiz(){
         Toast.makeText(applicationContext,"sub",Toast.LENGTH_SHORT).show()
         //마이너스 값이 나올수 없도록 처리
-        if(right > left)
+        if(right > left) {
             nn = left
             left=right
             right = nn
+        }
         nresult = left - right
         sentence.text = left.toString()+ " - " + right.toString() +" = ?"
     }
@@ -104,47 +105,45 @@ class MainActivity : AppCompatActivity() {
         sentence.text = left.toString()+ " * " + right.toString() +" = ?"
     }
 
-    //라디오 버튼 값을 랜덤으로 나오게 하기 위한 식
-    fun bnum() {
-        when(bchoice) {
-            0 -> bnum1()
-            1 -> bnum2()
-            2 -> bnum3()
-            3 -> bnum4()
+    fun rnum(){
+        var arr = Array<Int>(3,{0})
+        for( i in arr.indices){
+            arr[i] = random.nextInt(20)+1
         }
+        while (arr[0]==arr[1]||arr[0]==arr[2]||arr[1]==arr[2]||arr[0]==nresult||arr[1]==nresult||arr[2]==nresult){
+            for( i in arr.indices){
+                arr[i] = random.nextInt(20)+1
+            }
+        }
+        var rone = arr[0]
+        var rtwo = arr[1]
+        var rtree = arr[2]
+
+        if(bchoice==0) {
+            answer1.text = nresult.toString()
+            answer2.text = rone.toString()
+            answer3.text = rtwo.toString()
+            answer4.text = rtree.toString()
+        }
+        else if (bchoice==1) {
+            answer1.text = rone.toString()
+            answer2.text = nresult.toString()
+            answer3.text = rtwo.toString()
+            answer4.text = rtree.toString()
+        }
+        else if (bchoice==2) {
+            answer1.text = rone.toString()
+            answer2.text = rtwo.toString()
+            answer3.text = nresult.toString()
+            answer4.text = rtree.toString()
+        }
+        else if (bchoice==3) {
+            answer1.text = rone.toString()
+            answer2.text = rtwo.toString()
+            answer3.text = rtree.toString()
+            answer4.text = nresult.toString()
+        }
+
     }
 
-
-//라디오 버튼에 같은 값이 나오는 경우 처리해야됨
-    fun bnum1(){
-        Toast.makeText(applicationContext,"bnum1",Toast.LENGTH_SHORT).show()
-        answer1.text= nresult.toString()
-        answer2.text = random.nextInt(21).toString()
-        answer3.text = random.nextInt(21).toString()
-        answer4.text = random.nextInt(21).toString()
-    }
-
-    fun bnum2(){
-        Toast.makeText(applicationContext,"bnum2",Toast.LENGTH_SHORT).show()
-        answer1.text = random.nextInt(21).toString()
-        answer2.text= nresult.toString()
-        answer3.text = random.nextInt(21).toString()
-        answer4.text = random.nextInt(21).toString()
-    }
-
-    fun bnum3(){
-        Toast.makeText(applicationContext,"bnum3",Toast.LENGTH_SHORT).show()
-        answer1.text = random.nextInt(21).toString()
-        answer2.text = random.nextInt(21).toString()
-        answer3.text= nresult.toString()
-        answer4.text = random.nextInt(21).toString()
-    }
-
-    fun bnum4(){
-        Toast.makeText(applicationContext,"bnum4",Toast.LENGTH_SHORT).show()
-        answer1.text = random.nextInt(21).toString()
-        answer2.text = random.nextInt(21).toString()
-        answer3.text = random.nextInt(21).toString()
-        answer4.text= nresult.toString()
-    }
 }

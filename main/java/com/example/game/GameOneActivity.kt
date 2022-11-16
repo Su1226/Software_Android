@@ -3,6 +3,8 @@ package com.example.game
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.Gravity
+import android.view.View
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import java.util.*
@@ -17,6 +19,10 @@ class GameOneActivity : AppCompatActivity() {
     lateinit var answer3 : RadioButton
     lateinit var answer4 : RadioButton
     lateinit var checkResult: Button
+
+    lateinit var toastView : View
+    lateinit var toastText : TextView
+
 
     val random = Random()
     val fchoice = random.nextInt(3)
@@ -63,11 +69,40 @@ class GameOneActivity : AppCompatActivity() {
         }
 
         checkResult.setOnClickListener{
-            when(bbresult){
-                0 -> Toast.makeText(applicationContext,"답을 선택해주세요.",Toast.LENGTH_SHORT).show()
-                1 -> Toast.makeText(applicationContext,"정답입니다.",Toast.LENGTH_SHORT).show()
-                2 -> Toast.makeText(applicationContext,"오답입니다.",Toast.LENGTH_SHORT).show()
+            if(bbresult==0){
+                var toast2 = Toast(this@GameOneActivity)
+                toastView = View.inflate(this@GameOneActivity, R.layout.toast2, null)
+                toastText = toastView.findViewById<TextView>(R.id.checkToast)
+                toastText.text = "답을 선택해주세요"
+                toast2.setGravity(Gravity.CENTER, 30,30)
+                toast2.view=toastView
+                toast2.show()
             }
+            else if(bbresult==1) {
+                var toast1 = Toast(this@GameOneActivity)
+                toastView = View.inflate(this@GameOneActivity, R.layout.toast1, null)
+                toastText = toastView.findViewById<TextView>(R.id.correctToast)
+                toastText.text = "정답입니다"
+                toast1.setGravity(Gravity.CENTER, 30,30)
+                toast1.view=toastView
+                toast1.show()
+            }
+            else if(bbresult==2) {
+                var toast3 = Toast(this@GameOneActivity)
+                toastView = View.inflate(this@GameOneActivity, R.layout.toast3, null)
+                toastText = toastView.findViewById<TextView>(R.id.incorrectToast)
+                toastText.text = "오답입니다"
+                toast3.setGravity(Gravity.CENTER, 30,30)
+                toast3.view=toastView
+                toast3.show()
+            }
+
+
+//            when(bbresult){
+//                0 -> Toast.makeText(applicationContext,"답을 선택해주세요.",Toast.LENGTH_SHORT).show()
+//                1 -> Toast.makeText(applicationContext,"정답입니다.",Toast.LENGTH_SHORT).show()
+//                2 -> Toast.makeText(applicationContext,"오답입니다.",Toast.LENGTH_SHORT).show()
+//            }
         }
 
     }

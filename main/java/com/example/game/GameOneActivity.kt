@@ -27,13 +27,13 @@ class GameOneActivity : AppCompatActivity() {
 
 
     val random = Random()
-    var fchoice = random.nextInt(3)
-    var bchoice = random.nextInt(4)
+    var fchoice = random.nextInt(3) //랜덤 연산시 사용
+    var bchoice = random.nextInt(4) //랜덤으로 정답 위치 정할 때 사용
     var left = random.nextInt(10)+1
     var right = random.nextInt(10)+1
-    var nn = 0; //빼기 연산시 필요
+    var nn = 0; //빼기 연산시 사용
     var nresult = 100
-    var bbresult = 0
+    var bbresult = 0 // 라디오 버튼으로 계산 결과 확인시 사용
 
 
 
@@ -93,7 +93,7 @@ class GameOneActivity : AppCompatActivity() {
                 //토스트 뜨고 사라지면 새로운 문제 나타남
                 Handler().postDelayed({
                     refresh()
-                }, 2800)
+                }, 2700)
 
 
             }
@@ -113,12 +113,10 @@ class GameOneActivity : AppCompatActivity() {
     fun Quiz(){
         when(fchoice) {
             0 -> {
-                Toast.makeText(applicationContext,"plus",Toast.LENGTH_SHORT).show()
                 nresult = left + right
                 sentence.text = left.toString() + " + " + right.toString() +" = ?"
             }
             1 -> {
-                Toast.makeText(applicationContext,"sub",Toast.LENGTH_SHORT).show()
                 //마이너스 값이 나올수 없도록 처리
                 if(right > left) {
                     nn = left
@@ -129,7 +127,6 @@ class GameOneActivity : AppCompatActivity() {
                 sentence.text = left.toString()+ " - " + right.toString() +" = ?"
             }
             2 -> {
-                Toast.makeText(applicationContext,"mul",Toast.LENGTH_SHORT).show()
                 nresult = left * right
                 sentence.text = left.toString()+ " * " + right.toString() +" = ?"
             }

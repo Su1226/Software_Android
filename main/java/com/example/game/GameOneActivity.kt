@@ -106,42 +106,34 @@ class GameOneActivity : AppCompatActivity() {
                 toast3.view=toastView
                 toast3.show()
             }
-
         }
-
     }
 
-    //연산식 랜덤으로 나오게 하기 위한 식
+    //덧셈 뺄셈 곱셈 랜덤으로 나옴
     fun Quiz(){
         when(fchoice) {
-            0 -> plusQuiz()
-            1 -> subQuiz()
-            2 -> mulQuiz()
+            0 -> {
+                Toast.makeText(applicationContext,"plus",Toast.LENGTH_SHORT).show()
+                nresult = left + right
+                sentence.text = left.toString() + " + " + right.toString() +" = ?"
+            }
+            1 -> {
+                Toast.makeText(applicationContext,"sub",Toast.LENGTH_SHORT).show()
+                //마이너스 값이 나올수 없도록 처리
+                if(right > left) {
+                    nn = left
+                    left=right
+                    right = nn
+                }
+                nresult = left - right
+                sentence.text = left.toString()+ " - " + right.toString() +" = ?"
+            }
+            2 -> {
+                Toast.makeText(applicationContext,"mul",Toast.LENGTH_SHORT).show()
+                nresult = left * right
+                sentence.text = left.toString()+ " * " + right.toString() +" = ?"
+            }
         }
-    }
-
-    fun plusQuiz() {
-        Toast.makeText(applicationContext,"plus",Toast.LENGTH_SHORT).show()
-        nresult = left + right
-        sentence.text = left.toString() + " + " + right.toString() +" = ?"
-    }
-
-    fun subQuiz(){
-        Toast.makeText(applicationContext,"sub",Toast.LENGTH_SHORT).show()
-        //마이너스 값이 나올수 없도록 처리
-        if(right > left) {
-            nn = left
-            left=right
-            right = nn
-        }
-        nresult = left - right
-        sentence.text = left.toString()+ " - " + right.toString() +" = ?"
-    }
-
-    fun mulQuiz(){
-        Toast.makeText(applicationContext,"mul",Toast.LENGTH_SHORT).show()
-        nresult = left * right
-        sentence.text = left.toString()+ " * " + right.toString() +" = ?"
     }
 
     fun rnum(){
@@ -160,31 +152,32 @@ class GameOneActivity : AppCompatActivity() {
         var rtwo = arr[1]
         var rtree = arr[2]
 
-        if(bchoice==0) {
-            answer1.text = nresult.toString()
-            answer2.text = rone.toString()
-            answer3.text = rtwo.toString()
-            answer4.text = rtree.toString()
+        when(bchoice){
+            0 -> {
+                answer1.text = nresult.toString()
+                answer2.text = rone.toString()
+                answer3.text = rtwo.toString()
+                answer4.text = rtree.toString()
+            }
+            1 -> {
+                answer1.text = rone.toString()
+                answer2.text = nresult.toString()
+                answer3.text = rtwo.toString()
+                answer4.text = rtree.toString()
+            }
+            2 -> {
+                answer1.text = rone.toString()
+                answer2.text = rtwo.toString()
+                answer3.text = nresult.toString()
+                answer4.text = rtree.toString()
+            }
+            3 -> {
+                answer1.text = rone.toString()
+                answer2.text = rtwo.toString()
+                answer3.text = rtree.toString()
+                answer4.text = nresult.toString()
+            }
         }
-        else if (bchoice==1) {
-            answer1.text = rone.toString()
-            answer2.text = nresult.toString()
-            answer3.text = rtwo.toString()
-            answer4.text = rtree.toString()
-        }
-        else if (bchoice==2) {
-            answer1.text = rone.toString()
-            answer2.text = rtwo.toString()
-            answer3.text = nresult.toString()
-            answer4.text = rtree.toString()
-        }
-        else if (bchoice==3) {
-            answer1.text = rone.toString()
-            answer2.text = rtwo.toString()
-            answer3.text = rtree.toString()
-            answer4.text = nresult.toString()
-        }
-
     }
 
     fun refresh() {

@@ -1,7 +1,9 @@
 package com.example.game
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.provider.MediaStore
 import android.view.Gravity
 import android.view.View
@@ -25,13 +27,14 @@ class GameOneActivity : AppCompatActivity() {
 
 
     val random = Random()
-    val fchoice = random.nextInt(3)
-    val bchoice = random.nextInt(4)
+    var fchoice = random.nextInt(3)
+    var bchoice = random.nextInt(4)
     var left = random.nextInt(10)+1
     var right = random.nextInt(10)+1
     var nn = 0; //빼기 연산시 필요
     var nresult = 100
     var bbresult = 0
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,6 +80,7 @@ class GameOneActivity : AppCompatActivity() {
                 toast2.setGravity(Gravity.CENTER, 30,30)
                 toast2.view=toastView
                 toast2.show()
+
             }
             else if(bbresult==1) {
                 var toast1 = Toast(this@GameOneActivity)
@@ -86,6 +90,12 @@ class GameOneActivity : AppCompatActivity() {
                 toast1.setGravity(Gravity.CENTER, 30,30)
                 toast1.view=toastView
                 toast1.show()
+                //토스트 뜨고 사라지면 새로운 문제 나타남
+                Handler().postDelayed({
+                    refresh()
+                }, 2800)
+
+
             }
             else if(bbresult==2) {
                 var toast3 = Toast(this@GameOneActivity)
@@ -97,12 +107,6 @@ class GameOneActivity : AppCompatActivity() {
                 toast3.show()
             }
 
-
-//            when(bbresult){
-//                0 -> Toast.makeText(applicationContext,"답을 선택해주세요.",Toast.LENGTH_SHORT).show()
-//                1 -> Toast.makeText(applicationContext,"정답입니다.",Toast.LENGTH_SHORT).show()
-//                2 -> Toast.makeText(applicationContext,"오답입니다.",Toast.LENGTH_SHORT).show()
-//            }
         }
 
     }
@@ -141,6 +145,7 @@ class GameOneActivity : AppCompatActivity() {
     }
 
     fun rnum(){
+        //라디오 버튼에 정답빼고 중복 없는 랜덤 숫자 나오게 하는 식
         var arr = Array<Int>(3,{0})
         for( i in arr.indices){
             arr[i] = random.nextInt(20)+1
@@ -150,6 +155,7 @@ class GameOneActivity : AppCompatActivity() {
                 arr[i] = random.nextInt(20)+1
             }
         }
+
         var rone = arr[0]
         var rtwo = arr[1]
         var rtree = arr[2]
@@ -178,6 +184,24 @@ class GameOneActivity : AppCompatActivity() {
             answer3.text = rtree.toString()
             answer4.text = nresult.toString()
         }
+
+    }
+
+    fun refresh() {
+        //정답을 맞췄을 경우 자동으로 새로운 문제 나옴
+        fchoice = random.nextInt(3)
+        bchoice = random.nextInt(4)
+        left = random.nextInt(10)+1
+        right = random.nextInt(10)+1
+
+        Quiz()
+        rnum()
+
+        answer1.isChecked = false
+        answer2.isChecked = false
+        answer3.isChecked = false
+        answer4.isChecked = false
+        bbresult = 0
 
     }
 

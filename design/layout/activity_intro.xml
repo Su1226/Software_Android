@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/Intro_img"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/a" />
+
+    <Button
+        android:id="@+id/I_btn1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="치매 테스트"
+        android:textSize="48sp"></Button>
+
+    <Button
+        android:id="@+id/I_btn2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="치매 예방 게임"
+        android:textSize="48sp"></Button>
+
+    <Button
+        android:id="@+id/I_btn3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="등록"
+        android:textSize="48sp">
+
+    </Button>
+
+</LinearLayout>

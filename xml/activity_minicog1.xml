@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Minicog1Activity"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id = "@+id/M_slide">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/M_img1"
+            android:src = "@drawable/a1">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/M_img2"
+            android:src = "@drawable/b">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/M_img3"
+            android:src = "@drawable/c">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/M_img4"
+            android:src = "@drawable/d">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/M_img5"
+            android:src = "@drawable/s">
+        </ImageView>
+    </ViewFlipper>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:textSize="35dp"
+        android:text = "시작하기"
+        android:id = "@+id/M_btn1">
+    </Button>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:textSize="35dp"
+        android:text = "끝내기"
+        android:id = "@+id/M_btn2">
+    </Button>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:textSize="35dp"
+        android:text = "결과보기"
+        android:id = "@+id/M_btn3">
+    </Button>
+
+</LinearLayout>

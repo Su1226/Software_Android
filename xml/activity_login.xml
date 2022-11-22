@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/L_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/a" />
+
+    <EditText
+        android:id="@+id/L_edit"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/nanum"
+        android:hint="전화번호"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColor="#424242"
+        android:textColorHint="#888888"
+        android:textSize="30sp"></EditText>
+
+    <Button
+        android:id="@+id/L_btn1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="로그인"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/L_btn2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="등록"
+        android:textSize="30dp"></Button>
+
+</LinearLayout>

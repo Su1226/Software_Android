@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Dsq1Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/nanum"
+            android:text="종이를 준비해주세요"
+            android:textSize="40dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/nanum"
+            android:text="테스트를 시작합니다."
+            android:textSize="40dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nanum"
+            android:text="각 문항을 잘 읽은 다음"
+            android:textColor="#424242"
+            android:textSize="27dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/nanum"
+            android:text="10년 전과 비교 하십시오"
+            android:textColor="#424242"
+            android:textSize="27dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanum"
+            android:text="달라지지 않았다 : 0점"
+            android:textColor="#573650"
+            android:textSize="27dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanum"
+            android:text="조금 나빠졌다 : 1점"
+            android:textColor="#573650"
+            android:textSize="27dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:text="많이 나빠졌다 : 2점"
+            android:textColor="#573650"
+            android:textSize="27dp"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/K1_btn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:gravity="center"
+        android:text="시작하기"
+        android:textSize="25dp"></Button>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".K_DsqResultActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/nanum"
+            android:text="총 점수가 6점 이상이면"
+            android:textColor="#424242"
+            android:textSize="40dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:text="테스트3을 진행하세요."
+            android:textColor="#424242"
+            android:textSize="40dp"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/KR_btn1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="메뉴로 돌아가기"
+        android:textSize="25dp">
+
+    </Button>
+</LinearLayout>

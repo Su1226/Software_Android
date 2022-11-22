@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Minicog2ResultActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="점수"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="인지 손상 (양성)"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="1~2"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="비정상 시계 그리기
+                -> 인지 손상 (양성)"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="1~2"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="정상 시계 그리기
+                -> 인지 손상 (음성)"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="치매 선별 (양성)"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id = "@+id/img1"-->
+    <!--        android:src = "@drawable/u">-->
+    <!--    </ImageView>-->
+
+    <Button
+        android:id="@+id/MR_btn1"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="메인화면으로 가기"
+        android:textSize="20dp"></Button>
+</LinearLayout>

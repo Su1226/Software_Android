@@ -17,109 +17,132 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "이름"
-            android:textSize = "15dp">
-        </TextView>
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanum"
+            android:text="이름"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/Register_Name"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/Register_Name"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 김안드"
+            android:textSize="20dp"></EditText>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "전화번호"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="전화번호"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/Register_Phone"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/Register_Phone"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 01012345678"
+            android:textSize="20dp"></EditText>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "생년월일"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="생년월일"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/Register_Birthday"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/Register_Birthday"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 19981101"
+            android:textSize="20dp"></EditText>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanum"
             android:text="혈액형"
-            android:textSize="15dp"
-            android:layout_gravity="center"></TextView>
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
             android:id = "@+id/R2_RG"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/R2_R1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "A형"
-                android:id = "@+id/R2_R1"
-                android:textSize = "15dp">
-            </RadioButton>
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanum"
+                android:text="A형"
+                android:textSize="20dp"></RadioButton>
 
             <RadioButton
+                android:id="@+id/R2_R2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "B형"
-                android:id = "@+id/R2_R2"
-                android:textSize = "15dp">
-            </RadioButton>
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanum"
+                android:text="B형"
+                android:textSize="20dp"></RadioButton>
 
             <RadioButton
+                android:id="@+id/R2_R3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "O형"
-                android:id = "@+id/R2_R3"
-                android:textSize = "15dp">
-            </RadioButton>
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanum"
+                android:text="O형"
+                android:textSize="20dp"></RadioButton>
 
             <RadioButton
+                android:id="@+id/R2_R4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "AB형"
-                android:id = "@+id/R2_R4"
-                android:textSize = "15dp">
-            </RadioButton>
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanum"
+                android:text="AB형"
+                android:textSize="20dp"></RadioButton>
         </RadioGroup>
 
     </LinearLayout>
@@ -127,35 +150,70 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "키"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="키"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/R2_edit1"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit1"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 180"
+            android:textSize="20dp"></EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "몸무게"
-            android:textSize = "15dp">
-        </TextView>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:text="몸무게"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
+            android:id="@+id/R2_edit2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 70"
+            android:textSize="20dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
+        android:orientation="horizontal">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit2"
-            android:textSize = "15dp">
-        </EditText>
+            android:fontFamily="@font/nanum"
+            android:text="지병"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/R2_edit3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:hint="ex) 당뇨"
+            android:textSize="20dp"></EditText>
 
     </LinearLayout>
 
@@ -167,37 +225,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "지병"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="비상 연락망"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/R2_edit4"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit3"
-            android:textSize = "15dp">
-        </EditText>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text = "비상 연락망"
-            android:textSize = "15dp">
-        </TextView>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit4"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 01077777777"
+            android:textSize="20dp"></EditText>
 
     </LinearLayout>
 
@@ -205,53 +246,66 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "병원 전화번호"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="병원 전화번호"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/R2_edit6"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit6"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:hint="ex) 0511199111"
+            android:textSize="20dp"></EditText>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "투여 약"
-            android:textSize = "15dp">
-        </TextView>
+            android:fontFamily="@font/nanum"
+            android:text="투여 약"
+            android:textColor="#424242"
+            android:textSize="20dp"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/R2_edit7"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id = "@+id/R2_edit7"
-            android:textSize = "15dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum"
+            android:hint="ex) 당뇨약"
+            android:textSize="20dp"></EditText>
     </LinearLayout>
 
 
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:textSize="30dp"
         android:text= "저장"
-        android:id = "@+id/R_btn1"
-        android:textSize = "15dp">
+        android:id = "@+id/R_btn1">
     </Button>
 
 

@@ -49,25 +49,38 @@
     </ViewFlipper>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "시작하기"
-        android:id = "@+id/M_btn1">
-    </Button>
+        android:id="@+id/M_btn1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="시작하기"
+        android:textSize="35dp"></Button>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "끝내기"
-        android:id = "@+id/M_btn2">
-    </Button>
+        android:id="@+id/M_btn2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:textSize="35dp"
+        android:text="끝내기"
+        ></Button>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "결과보기"
-        android:id = "@+id/M_btn3">
-    </Button>
+        android:id="@+id/M_btn3"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="결과보기"
+        android:textSize="35dp"></Button>
 
 </LinearLayout>

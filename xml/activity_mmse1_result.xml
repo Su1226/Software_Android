@@ -7,18 +7,100 @@
     tools:context=".Mmse1ResultActivity"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id = "@+id/img1"
-        android:src = "@drawable/r">
-    </ImageView>
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="치매"
+            android:textColor="#800080"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="19점 이하"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:text="치매 의심"
+            android:textColor="#800080"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:text="20~23점"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="정상"
+            android:textColor="#800080"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="24점 이상"
+            android:textColor="#424242"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id = "@+id/img1"-->
+<!--        android:src = "@drawable/r">-->
+<!--    </ImageView>-->
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text= "메인화면으로 가기"
-        android:id = "@+id/MMR_btn1">
-    </Button>
+        android:id="@+id/MMR_btn1"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/nanum"
+        android:text="메인화면으로 가기"
+        android:textSize="25dp"></Button>
 
 </LinearLayout>

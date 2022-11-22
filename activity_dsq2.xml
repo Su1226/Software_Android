@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dsq2Activity">
+
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "1"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "며칠 전에 나누었던 대화 내용을 기억하는 것은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "2"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "최근에 했던 약속을 기억하는 것은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "3"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "최근에 주변에서 일어났던 일을 기억하는 것은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "4"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "가스불이나 전깃불을 켜놓고 끄는 것을 잊어버리는 것은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "5"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "새로 마련한 가전제품이나 기구의 사용법을 익히는 능력은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "6"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "자신의 개인위생을 관리하거나 외모를 가꾸는 정도는 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "7"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "중요한 제삿날이나 기념일을 기억하는 것은 어떻습니까?"
+            android:layout_margin="10dp"
+            android:textSize = "15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanum"
+            android:textColor="#424242">
+        </TextView>
+    </TableRow>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "다음"
+        android:id="@+id/K_btn1"
+        android:textStyle="bold"
+        android:background="@drawable/round_btn"
+        android:layout_margin="5dp">
+    </Button>
+
+</TableLayout>

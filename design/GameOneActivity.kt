@@ -22,6 +22,7 @@ class GameOneActivity : AppCompatActivity() {
     lateinit var answer3 : RadioButton
     lateinit var answer4 : RadioButton
     lateinit var checkResult: Button
+    lateinit var backBtn : Button
 
     lateinit var toastView : View
     lateinit var toastText : TextView
@@ -51,9 +52,15 @@ class GameOneActivity : AppCompatActivity() {
         answer3= findViewById<RadioButton>(R.id.answer3)
         answer4= findViewById<RadioButton>(R.id.answer4)
         checkResult = findViewById<Button>(R.id.checkResult)
+        backBtn = findViewById<Button>(R.id.backBtn)
 
         Quiz()
         rnum()
+        
+        backBtn.setOnClickListener{
+            var intent = Intent(applicationContext, DmtGamesActivity::class.java)
+            startActivity(intent)
+        }
 
         answer1.setOnClickListener{
             if(bchoice==0) bbresult=1

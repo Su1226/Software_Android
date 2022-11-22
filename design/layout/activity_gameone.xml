@@ -65,19 +65,38 @@
             android:text="RadioButton"
             android:fontFamily="@font/nanum"
             android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/checkResult"
-            android:layout_width="150dp"
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_btn"
-            android:fontFamily="@font/nanum"
+            android:layout_marginTop="15dp"
             android:gravity="center"
-            android:text="정답확인하기"
-            android:textSize="20dp" />
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="뒤로가기"
+                android:textSize="20dp" />
 
+            <Button
+                android:id="@+id/checkResult"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="정답확인하기"
+                android:textSize="20dp" />
+
+        </LinearLayout>
     </RadioGroup>
 </LinearLayout>
